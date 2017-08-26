@@ -7,7 +7,7 @@ disp('Working on the data ...');
 [data_sheet,~,data_sheet_raw] = xlsread(str);
 
 % Calculate and print energy consumed per unit distance
-Implement_05_EnergyConsumption; 
+EnergyConsumption; 
 
 % Efficiency prediction
 ML_02;

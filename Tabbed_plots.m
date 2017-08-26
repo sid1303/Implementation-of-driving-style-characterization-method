@@ -5,7 +5,7 @@ str = input(prompt,'s');
 [data_sheet,~,data_sheet_raw] = xlsread(str);
 
 % Calculate and print energy consumed per unit distance
-Implement_05_EnergyConsumption; 
+EnergyConsumption; 
 
 q=1;
 f = figure('units','normalized','outerposition',[0 0 1 1]);

@@ -9,7 +9,7 @@ for i = 1:(size(resID_Dist)-1)
     if(resID_Dist(i,1)~= resID_Dist(i+1,1))
         distance_traversed(n,1) = resID_Dist(i,2)-resID_Dist(m,2);
         
-        n=n+1;
+        n=n+1; 
         m = i+1;        
     end
 end
@@ -46,7 +46,6 @@ T = table(resID,energyConsumed,distance_traversed,energy_per_unit_dist);
 disp(T);
 
 %% Average energy consumed per unit distance
-%calculation_of_mean = nonzeros(energy_per_unit_dist);
 Mean_energy_consumed_per_unit_distance = mean(nonzeros(energy_per_unit_dist));
 fprintf('Mean Energy consumed per unit distance of the driver for all the rides : %0.2f Wh/km \n',...
     Mean_energy_consumed_per_unit_distance);
